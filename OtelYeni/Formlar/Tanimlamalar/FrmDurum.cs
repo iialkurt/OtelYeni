@@ -19,7 +19,7 @@ namespace OtelYeni.Formlar.Tanimlamalar
         {
             InitializeComponent();
         }
-        DbOtelEntities db = new DbOtelEntities();
+        DbOtelEntities1 db = new DbOtelEntities1();
 
         private void FrmDurum_Load(object sender, EventArgs e)
         {

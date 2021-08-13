@@ -20,7 +20,7 @@
             <PropertyRef Name="BirimId" />
           </Key>
           <Property Name="BirimId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="BirimAdı" Type="nvarchar" MaxLength="50" />
+          <Property Name="BirimAd" Type="nvarchar" MaxLength="50" />
           <Property Name="Durum" Type="int" />
         </EntityType>
         <EntityType Name="TblDepartman">
@@ -428,7 +428,7 @@
             <PropertyRef Name="BirimId" />
           </Key>
           <Property Name="BirimId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="BirimAdı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BirimAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Durum" Type="Int32" />
           <NavigationProperty Name="TblDurum" Relationship="Self.FK_TblBirim_TblDurum" FromRole="TblBirim" ToRole="TblDurum" />
           <NavigationProperty Name="TblUrun" Relationship="Self.FK_TblUrun_TblBirim" FromRole="TblBirim" ToRole="TblUrun" />
@@ -770,7 +770,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DbOtelEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DbOtelEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
           <EntitySet Name="TblBirim" EntityType="Self.TblBirim" />
           <EntitySet Name="TblDepartman" EntityType="Self.TblDepartman" />
@@ -851,7 +851,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DbOtelModelStoreContainer" CdmEntityContainer="DbOtelEntities">
+        <EntityContainerMapping StorageEntityContainer="DbOtelModelStoreContainer" CdmEntityContainer="DbOtelEntities1">
           <EntitySetMapping Name="sysdiagrams">
             <EntityTypeMapping TypeName="DbOtelModel.sysdiagrams">
               <MappingFragment StoreEntitySet="sysdiagrams">
@@ -867,7 +867,7 @@
             <EntityTypeMapping TypeName="DbOtelModel.TblBirim">
               <MappingFragment StoreEntitySet="TblBirim">
                 <ScalarProperty Name="BirimId" ColumnName="BirimId" />
-                <ScalarProperty Name="BirimAdı" ColumnName="BirimAdı" />
+                <ScalarProperty Name="BirimAd" ColumnName="BirimAd" />
                 <ScalarProperty Name="Durum" ColumnName="Durum" />
               </MappingFragment>
             </EntityTypeMapping>

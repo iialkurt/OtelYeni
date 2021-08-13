@@ -33,6 +33,11 @@ namespace OtelYeni
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.BtnDurum = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnBirimTanimlari = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnGorevTanimlari = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageCategory1 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -51,7 +56,7 @@ namespace OtelYeni
             this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPage9 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPage11 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.BtnBirimTanimlari = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,10 +69,15 @@ namespace OtelYeni
             this.ribbonControl1.SearchEditItem,
             this.barButtonItem1,
             this.BtnDurum,
-            this.BtnBirimTanimlari});
+            this.BtnBirimTanimlari,
+            this.barButtonItem2,
+            this.BtnGorevTanimlari,
+            this.barButtonItem3,
+            this.barButtonItem4,
+            this.barButtonItem5});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.ribbonControl1.MaxItemId = 4;
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5);
+            this.ribbonControl1.MaxItemId = 9;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsMenuMinWidth = 515;
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
@@ -101,6 +111,61 @@ namespace OtelYeni
             this.BtnDurum.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnDurum.Name = "BtnDurum";
             this.BtnDurum.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnDurum_ItemClick);
+            // 
+            // BtnBirimTanimlari
+            // 
+            this.BtnBirimTanimlari.Caption = "Birim Tanımları";
+            this.BtnBirimTanimlari.Id = 3;
+            this.BtnBirimTanimlari.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnBirimTanimlari.ImageOptions.Image")));
+            this.BtnBirimTanimlari.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnBirimTanimlari.ImageOptions.LargeImage")));
+            this.BtnBirimTanimlari.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnBirimTanimlari.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnBirimTanimlari.Name = "BtnBirimTanimlari";
+            this.BtnBirimTanimlari.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnBirimTanimlari_ItemClick);
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Departman Tanımları";
+            this.barButtonItem2.Id = 4;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.barButtonItem2.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.barButtonItem2.ItemAppearance.Normal.Options.UseFont = true;
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
+            // 
+            // BtnGorevTanimlari
+            // 
+            this.BtnGorevTanimlari.Caption = "Görev Tanımları";
+            this.BtnGorevTanimlari.Id = 5;
+            this.BtnGorevTanimlari.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGorevTanimlari.ImageOptions.Image")));
+            this.BtnGorevTanimlari.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnGorevTanimlari.ImageOptions.LargeImage")));
+            this.BtnGorevTanimlari.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnGorevTanimlari.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnGorevTanimlari.Name = "BtnGorevTanimlari";
+            this.BtnGorevTanimlari.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGorevTanimlari_ItemClick);
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "  Kasa  Tanımları";
+            this.barButtonItem3.Id = 6;
+            this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
+            this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+            this.barButtonItem3.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.barButtonItem3.ItemAppearance.Normal.Options.UseFont = true;
+            this.barButtonItem3.Name = "barButtonItem3";
+            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "  Kur  Tanımları";
+            this.barButtonItem4.Id = 7;
+            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.barButtonItem4.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.barButtonItem4.ItemAppearance.Normal.Options.UseFont = true;
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
             // ribbonPageCategory1
             // 
@@ -175,6 +240,11 @@ namespace OtelYeni
             // 
             this.ribbonPageGroup6.ItemLinks.Add(this.BtnDurum);
             this.ribbonPageGroup6.ItemLinks.Add(this.BtnBirimTanimlari);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup6.ItemLinks.Add(this.BtnGorevTanimlari);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem5);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             // 
             // ribbonPage3
@@ -202,16 +272,16 @@ namespace OtelYeni
             this.ribbonPage11.Name = "ribbonPage11";
             this.ribbonPage11.Text = "ribbonPage11";
             // 
-            // BtnBirimTanimlari
+            // barButtonItem5
             // 
-            this.BtnBirimTanimlari.Caption = "Birim Tanımları";
-            this.BtnBirimTanimlari.Id = 3;
-            this.BtnBirimTanimlari.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.BtnBirimTanimlari.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.BtnBirimTanimlari.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnBirimTanimlari.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnBirimTanimlari.Name = "BtnBirimTanimlari";
-            this.BtnBirimTanimlari.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnBirimTanimlari_ItemClick);
+            this.barButtonItem5.Caption = "  Oda  Tanımları";
+            this.barButtonItem5.Id = 8;
+            this.barButtonItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.barButtonItem5.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
+            this.barButtonItem5.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.barButtonItem5.ItemAppearance.Normal.Options.UseFont = true;
+            this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick);
             // 
             // Form1
             // 
@@ -254,6 +324,11 @@ namespace OtelYeni
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage11;
         private DevExpress.XtraBars.BarButtonItem BtnDurum;
         private DevExpress.XtraBars.BarButtonItem BtnBirimTanimlari;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem BtnGorevTanimlari;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
     }
 }
 

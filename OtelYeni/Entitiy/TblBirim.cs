@@ -21,7 +21,7 @@ namespace OtelYeni.Entitiy
         }
     
         public int BirimId { get; set; }
-        public string BirimAdı { get; set; }
+        public string BirimAd { get; set; }
         public Nullable<int> Durum { get; set; }
     
         public virtual TblDurum TblDurum { get; set; }

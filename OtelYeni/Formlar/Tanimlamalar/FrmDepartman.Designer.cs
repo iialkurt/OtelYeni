@@ -1,7 +1,7 @@
 ﻿
 namespace OtelYeni.Formlar.Tanimlamalar
 {
-    partial class FrmBirim
+    partial class FrmDepartman
     {
         /// <summary>
         /// Required designer variable.
@@ -33,13 +33,14 @@ namespace OtelYeni.Formlar.Tanimlamalar
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.BirimAd = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.DepartmanAd = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Telefon = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Durum = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DurumRepositoryLookUpEdit = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.repositoryItemToggleSwitch1 = new DevExpress.XtraEditors.Repository.RepositoryItemToggleSwitch();
             this.repositoryItemCalcEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.birimSilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vazgeçToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -62,29 +63,40 @@ namespace OtelYeni.Formlar.Tanimlamalar
             this.repositoryItemCalcEdit1,
             this.DurumRepositoryLookUpEdit});
             this.gridControl1.Size = new System.Drawing.Size(482, 353);
-            this.gridControl1.TabIndex = 0;
+            this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.BirimAd,
+            this.DepartmanAd,
+            this.Telefon,
             this.Durum});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
             this.gridView1.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.gridView1_CellValueChanged);
             // 
-            // BirimAd
+            // DepartmanAd
             // 
-            this.BirimAd.Caption = "Birim Adı";
-            this.BirimAd.FieldName = "BirimAd";
-            this.BirimAd.MinWidth = 25;
-            this.BirimAd.Name = "BirimAd";
-            this.BirimAd.Visible = true;
-            this.BirimAd.VisibleIndex = 0;
-            this.BirimAd.Width = 94;
+            this.DepartmanAd.Caption = "Departman Adı";
+            this.DepartmanAd.FieldName = "DepartmanAd";
+            this.DepartmanAd.MinWidth = 25;
+            this.DepartmanAd.Name = "DepartmanAd";
+            this.DepartmanAd.Visible = true;
+            this.DepartmanAd.VisibleIndex = 0;
+            this.DepartmanAd.Width = 94;
+            // 
+            // Telefon
+            // 
+            this.Telefon.Caption = "Telefon";
+            this.Telefon.FieldName = "Telefon";
+            this.Telefon.MinWidth = 25;
+            this.Telefon.Name = "Telefon";
+            this.Telefon.Visible = true;
+            this.Telefon.VisibleIndex = 1;
+            this.Telefon.Width = 94;
             // 
             // Durum
             // 
@@ -94,7 +106,7 @@ namespace OtelYeni.Formlar.Tanimlamalar
             this.Durum.MinWidth = 25;
             this.Durum.Name = "Durum";
             this.Durum.Visible = true;
-            this.Durum.VisibleIndex = 1;
+            this.Durum.VisibleIndex = 2;
             this.Durum.Width = 94;
             // 
             // DurumRepositoryLookUpEdit
@@ -125,17 +137,17 @@ namespace OtelYeni.Formlar.Tanimlamalar
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.birimSilToolStripMenuItem,
+            this.SilToolStripMenuItem,
             this.vazgeçToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(134, 52);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(174, 52);
             // 
-            // birimSilToolStripMenuItem
+            // SilToolStripMenuItem
             // 
-            this.birimSilToolStripMenuItem.Name = "birimSilToolStripMenuItem";
-            this.birimSilToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.birimSilToolStripMenuItem.Text = "Birim Sil";
-            this.birimSilToolStripMenuItem.Click += new System.EventHandler(this.birimSilToolStripMenuItem_Click);
+            this.SilToolStripMenuItem.Name = "SilToolStripMenuItem";
+            this.SilToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.SilToolStripMenuItem.Text = "Departman Sil";
+            this.SilToolStripMenuItem.Click += new System.EventHandler(this.SilToolStripMenuItem_Click);
             // 
             // vazgeçToolStripMenuItem
             // 
@@ -143,16 +155,19 @@ namespace OtelYeni.Formlar.Tanimlamalar
             this.vazgeçToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.vazgeçToolStripMenuItem.Text = "Vazgeç";
             // 
-            // FrmBirim
+            // FrmDepartman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 353);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.gridControl1);
-            this.Name = "FrmBirim";
-            this.Text = "Birim Tanımları";
-            this.Load += new System.EventHandler(this.FrmBirim_Load);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FrmDepartman";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "FrmDepartman";
+            this.Load += new System.EventHandler(this.FrmDepartman_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
@@ -169,13 +184,14 @@ namespace OtelYeni.Formlar.Tanimlamalar
         private DevExpress.XtraGrid.GridControl gridControl1;
         private System.Windows.Forms.BindingSource bindingSource1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn BirimAd;
+        private DevExpress.XtraGrid.Columns.GridColumn DepartmanAd;
+        private DevExpress.XtraGrid.Columns.GridColumn Telefon;
         private DevExpress.XtraGrid.Columns.GridColumn Durum;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit DurumRepositoryLookUpEdit;
         private DevExpress.XtraEditors.Repository.RepositoryItemToggleSwitch repositoryItemToggleSwitch1;
         private DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit repositoryItemCalcEdit1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem birimSilToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SilToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vazgeçToolStripMenuItem;
     }
 }

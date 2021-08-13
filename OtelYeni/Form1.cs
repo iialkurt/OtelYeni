@@ -28,5 +28,35 @@ namespace OtelYeni
             Formlar.Tanimlamalar.FrmBirim fr = new Formlar.Tanimlamalar.FrmBirim();
             fr.Show();
         }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Tanimlamalar.FrmDepartman fr = new Formlar.Tanimlamalar.FrmDepartman();
+            fr.Show();
+        }
+
+        private void BtnGorevTanimlari_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Tanimlamalar.FrmGorev fr = new Formlar.Tanimlamalar.FrmGorev();
+            fr.Show();
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Tanimlamalar.FrmKasa fr = new Formlar.Tanimlamalar.FrmKasa();
+            fr.Show();
+        }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Tanimlamalar.FrmKur fr = new Formlar.Tanimlamalar.FrmKur();
+            fr.Show();
+        }
+
+        private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Tanimlamalar.FrmOda fr = new Formlar.Tanimlamalar.FrmOda();
+            fr.Show();
+        }
     }
 }

@@ -47,10 +47,10 @@ namespace OtelYeni.Formlar.Tanimlamalar
             // 
             this.gridControl1.DataSource = this.bindingSource1;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(6);
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(482, 353);
             this.gridControl1.TabIndex = 0;
@@ -84,19 +84,19 @@ namespace OtelYeni.Formlar.Tanimlamalar
             this.durumuSilToolStripMenuItem,
             this.vazgeçToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 80);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(152, 52);
             // 
             // durumuSilToolStripMenuItem
             // 
             this.durumuSilToolStripMenuItem.Name = "durumuSilToolStripMenuItem";
-            this.durumuSilToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.durumuSilToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
             this.durumuSilToolStripMenuItem.Text = "Durumu Sil";
             this.durumuSilToolStripMenuItem.Click += new System.EventHandler(this.durumuSilToolStripMenuItem_Click);
             // 
             // vazgeçToolStripMenuItem
             // 
             this.vazgeçToolStripMenuItem.Name = "vazgeçToolStripMenuItem";
-            this.vazgeçToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.vazgeçToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
             this.vazgeçToolStripMenuItem.Text = "Vazgeç";
             // 
             // FrmDurum

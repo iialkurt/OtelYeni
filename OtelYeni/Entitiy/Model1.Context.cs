@@ -13,10 +13,12 @@ namespace OtelYeni.Entitiy
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DbOtelEntities : DbContext
+    public partial class DbOtelEntities1 : DbContext
     {
-        public DbOtelEntities()
-            : base("name=DbOtelEntities")
+        internal object Local;
+
+        public DbOtelEntities1()
+            : base("name=DbOtelEntities1")
         {
         }
     
